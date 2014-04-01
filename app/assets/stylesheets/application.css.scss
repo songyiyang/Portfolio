@@ -27,7 +27,7 @@ body {
   color:#16a085;
 }
 
-#linkedIn, #github, #twitter {
+#linkedIn, #github, #twitter, #dropdown-li {
   margin-top: 15px;
   margin-left: 20px;
   text-decoration:none;
@@ -40,7 +40,11 @@ body {
 }
 
 #pic{
-  margin-left:10px;
+  max-height: 40px;
+  margin-right:10px;
+}
+#dropdown-li a{
+  text-decoration:none;
 }
 #dropdown {
   background-color: #7f8c8d;
@@ -56,8 +60,9 @@ body {
   max-width: 500px;
   width: 1286px;
   margin-left: 100px;
-  opacity: 70%;
+  opacity: 0.8;
 }
+
 
 
 #myself {
@@ -69,5 +74,9 @@ body {
   text-shadow: none;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+
+#myself-p {
+  font-size: 15px
 }
 
