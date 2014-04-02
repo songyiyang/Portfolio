@@ -1,3 +1,7 @@
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+/*jslint white: true */
+"use strict";
 $(document).ready(function() {
   $('dl').toggle();
   $('h2').bind('click', function(event) {
@@ -8,9 +12,8 @@ $(document).ready(function() {
   });
   $('body').prepend('<div class="video-background"></div>');
   $('.video-background').videobackground({
-    videoSource: [['http://pdl.vimeocdn.com/24613/325/200436457.mp4?token2=1395780263_f351e120729eb08a36f1a3f172988544&aksessionid=9f878c5c013782a8', 'video/mp4']],
+    videoSource: [['http://pdl.vimeocdn.com/75973/468/221428380.mp4?token2=1396459365_b7e67cab05c82495d796cb5bdd4d6fd7&amp', 'video/mp4']],
     controlPosition: '#main',
-    poster: 'video/big-buck-bunny.jpg',
     loadedCallback: function() {
       $(this).videobackground('mute');
     }

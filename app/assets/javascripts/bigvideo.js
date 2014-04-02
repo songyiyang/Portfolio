@@ -1,3 +1,6 @@
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+/*jslint white: true */
 /*
 	BigVideo - The jQuery Plugin for Big Background Video (and Images)
 	by John Polacek (@johnpolacek)
@@ -6,8 +9,8 @@
 
     Dependencies: jQuery, jQuery UI (Slider), Video.js, ImagesLoaded
 */
-
-;(function($) {
+"use strict";
+(function($) {
 
     $.BigVideo = function(options) {
 
