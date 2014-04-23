@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
   $('body').prepend('<div class="video-background"></div>');
   $('.video-background').videobackground({
-    videoSource: [['http://pdl.vimeocdn.com/94264/560/243223128.mp4?token2=1398275179_099d221e68238d75041ef26d79d00d0b&aksessionid=02c2ead7d2723456', 'video/mp4']],
+    videoSource: [['http://pdl.vimeocdn.com/94264/560/243223128.mp4?token2=1398289207_739e413a2a6fa31218090554e475c2b3&aksessionid=a17add0f6092efd5', 'video/mp4']],
     controlPosition: '#main',
     loadedCallback: function() {
       $(this).videobackground('mute');
