@@ -15,10 +15,17 @@ $(document).ready(function() {
     videoSource: [['https://s3-us-west-2.amazonaws.com/yiyang/backvideo-HD.mp4', 'video/mp4']],
     controlPosition: '#main',
     loadedCallback: function() {
-      $(this).videobackground('mute');
+      // $(this).videobackground('mute');
+    }
+  });
+  $('#mute').click(function(){
+    $('.video-background').videobackground('mute');
+    if ($('#mute-img').attr('src') === "http://i.imgur.com/wkj7Pwq.png"){
+      $('#mute-img').attr('src', $('#mute-img').attr('src').replace("http://i.imgur.com/wkj7Pwq.png", "http://i.imgur.com/qSmc7cK.png"));
+    }else{
+      $('#mute-img').attr('src', $('#mute-img').attr('src').replace("http://i.imgur.com/qSmc7cK.png", "http://i.imgur.com/wkj7Pwq.png"));
     }
   });
 
 });
-
 
