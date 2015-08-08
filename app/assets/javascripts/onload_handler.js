@@ -19,8 +19,10 @@ $(document).ready(function(){
   $('#mute').on('click', function(){ muteToggle() });
 
 	$("#yiyang").on('click', function(){
-		$("#left-p").children().css('display', 'none');
-		$("#about-me").fadeIn("slow");
+		if ($("#about-me").css('display') === 'none'){
+			$("#left-p").children().css('display', 'none');
+			$("#about-me").fadeIn("slow");
+		}
 	});
 
 	$('.portlight-projects').on('click', function(){
