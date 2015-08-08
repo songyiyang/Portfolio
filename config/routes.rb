@@ -1,3 +1,3 @@
 Yiyang::Application.routes.draw do
-  root 'songs#index'
+  root 'main#index'
 end

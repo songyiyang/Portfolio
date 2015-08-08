@@ -3,38 +3,44 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
       </button>
       <a id="yiyang" class="navbar-brand" href="javascript:;"><img id="pic" src="http://imgur.com/YJY0SMC.png" alt=".."/><span>Yiyang Song</span></a>
     </div>
 
-<!-- <a href="http://imgur.com/JsZE6bj"><img src="http://i.imgur.com/JsZE6bj.jpg" title="Hosted by imgur.com" /></a> -->
-
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a id="linkedIn" target="_blank" href="http://www.linkedin.com/pub/yiyang-song/8a/267/b28">LinkedIn</a></li>
-        <li><a id="github" target="_blank" href="https://github.com/songyiyang">Github</a></li>
-        <li><a id="twitter" target="_blank" href="https://twitter.com/song_yiyang">Twitter</a></li>
-        <li id="dropdown-li" class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+
+        <li><a class="nav-li" target="_blank" href="http://www.linkedin.com/pub/yiyang-song/8a/267/b28">LinkedIn</a></li>
+
+        <li><a class="nav-li" target="_blank" href="https://github.com/songyiyang">Github</a></li>
+
+        <li class="dropdown nav-li">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portlight Projects <span class="caret"></span></a>
           <ul id="dropdown" class="dropdown-menu">
-            <li><a target="_blank" href="https://github.com/songyiyang/AdWords/blob/master/adwords.java">AdWords (Codes Only)</a></li>
-            <li><a target="_blank" href="http://cloud-radio.herokuapp.com">CloudRadio</a></li>
-            <li><a target="_blank" href="http://checkupapp.herokuapp.com">CheckUp</a></li>
-            <li><a target="_blank" href="https://github.com/songyiyang/Peer-to-Peer">Peer-to-Peer (Codes Only)</a></li>
-            <li><a target="_blank" href="http://skysong.herokuapp.com">SkySong</a></li>
+            <li><a href="#" class='portlight-projects' data-id='#about-ofp'>Order Fulfillment</a></li>
+            <li><a href="#" class='portlight-projects' data-id='#about-apn'>Amazon Perform Notification</a></li>
+            <li><a href="#" class='portlight-projects' data-id='#about-veri'>Verification / EbayLeaf</a></li>
           </ul>
         </li>
+
+        <li class="dropdown nav-li">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">GA & School Projects<b class="caret"></b></a>
+          <ul id="dropdown" class="dropdown-menu">
+            <li><a target="_blank" href="http://checkupapp.herokuapp.com">CheckUp</a></li>
+            <li><a target="_blank" href="http://cloud-radio.herokuapp.com">CloudRadio</a></li>
+            <li><a target="_blank" href="http://skysong.herokuapp.com">SkySong</a></li>
+            <li><a target="_blank" href="https://github.com/songyiyang/AdWords/blob/master/adwords.java">AdWords (Codes Only)</a></li>
+            <li><a target="_blank" href="https://github.com/songyiyang/Peer-to-Peer">Peer-to-Peer (Codes Only)</a></li>
+          </ul>
+        </li>
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li id="mute"><img id='mute-img' src='http://i.imgur.com/wkj7Pwq.png'/></li>
-        <li id="live_long">Live Long And Prosper!</li>
         <!-- MUTE: http://i.imgur.com/wkj7Pwq.png -->
         <!-- ON : http://i.imgur.com/qSmc7cK.png -->
+        <li id="mute"><img id='mute-img' data-on=true src='http://i.imgur.com/wkj7Pwq.png'/></li>
+        <li id="live_long">Live Long And Prosper!</li>
       </ul>
     </div>
   </div>

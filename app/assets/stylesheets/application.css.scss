@@ -1,9 +1,10 @@
-@import 'bootstrap';
-@import 'flat-ui';
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 body {
   background-color: #ecf0f1;
 }
+
 #nav-bar { height: 70px; }
 
 .navbar-nav {
@@ -21,20 +22,27 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .video-background video {
-  min-height: 100%; 
-  min-width:100%; 
+  min-height: 100%;
+  min-width:100%;
 }
+
 #yiyang {
   margin-right: 20px;
   text-decoration:none;
 }
-#yiyang span {
-  margin-left: 10px;
-  color:#16a085;
+
+#yiyang img {
+  display:inline-block;
 }
 
-#linkedIn, #github, #twitter, #dropdown-li{
+#yiyang span {
+  margin-left: 5px;
+  color:#2c3e50;
+}
+
+.nav-li{
   margin-top: 11px;
   margin-left: 20px;
   text-decoration:none;
@@ -54,8 +62,8 @@ body {
   text-decoration:none;
   cursor:pointer;
   padding-right:60px;
-
 }
+
 #mute-img{
   height:20px;
   width: 20px;
@@ -75,26 +83,41 @@ body {
 #dropdown-li a{
   text-decoration:none;
 }
-#dropdown {
+/*#dropdown {
   background-color: #7f8c8d;
-}
+}*/
 #dropdown li{
-  background-color: #7f8c8d;
+  /*background-color: #7f8c8d;*/
+  height: 30px;
 }
-#page-content {
+
+#about-me, #about-portlight {
   position: relative;
-  background-color: #bdc3c7;
-  visibility: visible;
+  background-color: #ecf0f1;
+  display: none;
   padding: 40px;
   max-width: 500px;
   width: 1286px;
   margin-left: 100px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
+#about-ofp, #about-apn, #about-veri {
+  position: relative;
+  background-color: #bdc3c7;
+  display: none;
+  padding: 40px;
+  max-width: 500px;
+  width: 1286px;
+  margin-left: 50%;
+  opacity: 0.9;
+}
 
+#all-p {
+  display: inline-flex;
+}
 
-#myself {
+#myself, #portlight {
   color: #141414;
   font-family: 'Open Sans', sans-serif;
   font-size: 54px;
@@ -105,7 +128,12 @@ body {
   margin-bottom: 10px;
 }
 
-#myself-p {
+#myself-p, #portlight-p {
   font-size: 15px
+}
+
+.remove {
+  float:right;
+  cursor:pointer;
 }
 
