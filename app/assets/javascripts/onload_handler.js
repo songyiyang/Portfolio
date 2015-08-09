@@ -4,6 +4,9 @@
 "use strict";
 
 $(document).ready(function(){
+	checkWindowSize();
+
+	$( window ).resize(function() { checkWindowSize() });
 
 	var videoBody = '<div class="video-background"></div>',
 			videoSource = 'https://s3-us-west-2.amazonaws.com/yiyang/backvideo-HD.mp4',
@@ -24,6 +27,7 @@ $(document).ready(function(){
 			$("#about-me").fadeIn("slow");
 		}
 	});
+	$("#yiyang").click();
 
 	$('.portlight-projects').on('click', function(){
 		if ($("#about-portlight").css('display') === 'none'){

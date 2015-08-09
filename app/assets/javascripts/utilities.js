@@ -15,3 +15,15 @@ function muteToggle(){
     	.data('on', true);
   }
 }
+
+function checkWindowSize(){
+  var visible = $('#all-p').css('visibility'),
+      width = $(window).width();
+  if (width < 1100 && visible === 'visible'){
+    $('#all-p').css('visibility', 'hidden');
+    $('.nav-li').css('display', 'none');
+  }else if (width > 1100 && visible === 'hidden'){
+    $('#all-p').css('visibility', 'visible');
+    $('.nav-li').css('display', 'block');
+  }
+}

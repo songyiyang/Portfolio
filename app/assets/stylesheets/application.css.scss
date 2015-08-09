@@ -49,7 +49,7 @@ body {
 }
 
 #live_long{
-  margin-top: 27px;
+  margin-top: 24px;
   margin-right: 20px;
   text-decoration:none;
   font-family: 'Pacifico', cursive;
@@ -57,7 +57,7 @@ body {
 }
 
 #mute{
-  margin-top: 27px;
+  margin-top: 24px;
   margin-right: 5px;
   text-decoration:none;
   cursor:pointer;
@@ -67,6 +67,7 @@ body {
 #mute-img{
   height:20px;
   width: 20px;
+  /*background-color: #f8f8f8;*/
 }
 
 #projects{
@@ -96,20 +97,21 @@ body {
   background-color: #ecf0f1;
   display: none;
   padding: 40px;
-  max-width: 500px;
-  width: 1286px;
-  margin-left: 100px;
+  max-width: 600px;
+  margin-left: 60px;
+  height: 600px;
   opacity: 0.9;
 }
 
 #about-ofp, #about-apn, #about-veri {
   position: relative;
-  background-color: #bdc3c7;
+  background-color: #ecf0f1; /* #bdc3c7;*/
   display: none;
   padding: 40px;
-  max-width: 500px;
-  width: 1286px;
-  margin-left: 50%;
+  max-width: 600px;
+  margin-right: 50px;
+  margin-left: 20px;
+  height: 600px;
   opacity: 0.9;
 }
 
